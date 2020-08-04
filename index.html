@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Miller</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/male-technologist-type-1-2_1f468-1f3fb-200d-1f4bb.png">
+    <link rel="stylesheet" href="public/build/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6dafcb35b8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="float-right py-3 xl:px-10 theme-switch-wrapper">
+            <i class="fas fa-sun fa-lg px-3"></i>
+            <label onchange="changeMode()" class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <i class="fas fa-moon fa-lg px-3"></i>
+        </div>
+        <div id="intro" class="px-10 pb-16 pt-24 xl:py-48 xl:px-24">
+            <h1 class="intro-hi text-3xl xl:text-4xl font-light">Hi there!
+                <span class="emoji wave-hand"></span>
+            </h1>
+            <h2 class="intro-blurb py-8 text-xl xl:text-4xl font-medium">I'm <span class="font-bold">Edward
+                    Miller,</span>
+                a front-end software engineer with a passion for building beautiful interfaces and
+                experiences.
+            </h2>
+            <h3 class="intro-contact">
+                <span class="text- font-medium">Get in touch </span>
+                <span class="emoji point-right"></span>
+                <span>
+                    <a href="mailto:edmiller.me@gmail.com"
+                        class="highlight-link text-md border-b-2 border-green-500">edmiller.me@gmail.com</a>
+                </span>
+            </h3>
+        </div>
+    </header>
+    <section id="background">
+        <div class="mx-10 xl:flex xl:mx-64 xl:mb-48">
+            <div class="pb-6">
+                <span class="text-green-500 font-bold text-base uppercase tracking-widest">Background</span>
+            </div>
+            <div class="ml-6 xl:ml-16">
+                <p class="pb-8">I'm currently an Inventory Coordinator at <a href="https://vetlife.co.nz/"
+                        target="_blank" class="link font-bold">Vetlife</a> in
+                    Ashburton after recently graduating from <a href="https://www.sit.ac.nz/" target="_blank"
+                        class="link font-bold">The
+                        Southern
+                        Institute of Technology</a> with a bachelor in IT.</p>
+
+                <p class="pb-8">As a software engineer, I enjoy having the ability to build anything you
+                    think of. My
+                    goal
+                    is to always build applications that are scalable and efficient behind the scenes whilst
+                    also
+                    providing engaging and elegant user experiences.</p>
+
+                <p class="pb-8"><span class="font-bold">When i'm not in front of a computer screen,</span>
+                    you might
+                    find me playing video games with friends, reading a good book, playing my guitar or
+                    hanging out with
+                    my two fluffy cats. &nbsp;<a href="https://www.instagram.com/benjaminandbeauthebirmans/?hl=en"
+                        target="_blank"><span class="emoji cat"></span></a></p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="mx-10 mb-10 xl:flex xl:mx-64 xl:mb-48">
+            <div class="pb-6">
+                <span class="text-green-500 font-bold text-base uppercase tracking-widest">Skills</span>
+            </div>
+            <div class="ml-6 xl:ml-32">
+                <span class="font-bold uppercase tracking-wide">Languages</span>
+                <ul class="text pt-2">
+                    <li class="pb-1">Javascript(ES6)</li>
+                    <li class="pb-1">HTML5</li>
+                    <li class="pb-1">CSS3</li>
+                </ul>
+            </div>
+            <div class="mx-40 xl:mx-32">
+                <span class="font-bold uppercase tracking-wide">Frameworks</span>
+                <ul class="text pt-2">
+                    <li class="pb-1">VueJS</li>
+                    <li class="pb-1">Bootstrap</li>
+                    <li class="pb-1">TailwindCSS</li>
+                    <li class="pb-1">ASP.NET Core</li>
+                </ul>
+            </div>
+            <div class="ml-6">
+                <span class="font-bold uppercase tracking-wide">Tools</span>
+                <ul class="text pt-2">
+                    <li class="pb-1">Git & Github</li>
+                    <li class="pb-1">NPM</li>
+                    <li class="pb-1">Firebase</li>
+                </ul>
+            </div>
+    </section>
+    <section class="other projects">
+        <div class="mx-10 mb-10 xl:flex xl:mx-64 xl:mb-48">
+            <div class="pb-6">
+                <span class="text-green-500 font-bold text-base uppercase tracking-widest">
+                    Projects
+                </span>
+            </div>
+            <div class="flex-col xl:ml-8">
+                <div class="xl:ml-16">
+                    <span class="font-bold">Felinder</span>
+                    <a href="https://github.com/edmiller1/Felinder" class="ml-3"><i
+                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                </div>
+                <p class="xl:ml-16 pt-6">An application similar to Tinder that allows users to unmatch, match or
+                    super-like
+                    cats based on picture, distance and age.
+                </p>
+                <div class="flex xl:ml-16 pt-6 pb-12">
+                    <span class="tag">VueJS</span>
+                    <span class="tag">Vuex</span>
+                    <span class="tag">Vue-Router</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">Axios</span>
+                </div>
+                <div class="xl:ml-16">
+                    <span class="font-bold">VueTODO</span>
+                    <a href="https://github.com/edmiller1/vueTODO" class="ml-3"><i
+                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                </div>
+                <p class="xl:ml-16 pt-6">A desktop TODO app built with VueJS that allows users to create, read, update
+                    and
+                    delete TODO's as well as mark them as important.
+                </p>
+                <div class="flex xl:ml-16 pt-6 pb-12">
+                    <span class="tag">VueJS</span>
+                    <span class="tag">Vuex</span>
+                    <span class="tag">Vue-Router</span>
+                    <span class="tag">Vuetify</span>
+                    <span class="tag">Firebase</span>
+                </div>
+                <div class="xl:ml-16">
+                    <span class="font-bold">Trello Clone</span>
+                    <a href="https://github.com/edmiller1/Trello-Clone" class="ml-3"><i
+                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                </div>
+                <p class="xl:ml-16 pt-6">A desktop web app that mimics
+                    the basic capabilities of Trello and stores all created tasks using local storage.
+                </p>
+                <div class="flex xl:ml-16 pt-6 pb-12">
+                    <span class="tag">VueJS</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">Drag and Drop API</span>
+                    <span class="tag">Local Storage</span>
+                </div>
+                <div class="xl:ml-16">
+                    <span class="font-bold">Github Resume</span>
+                    <a href="https://github.com/edmiller1/edmiller1.github.io" class="ml-3"><i
+                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                </div>
+                <p class="xl:ml-16 pt-6">An online resume hosted on Github Pages that displays key things about myself
+                    including projects,
+                    education and skills.
+                </p>
+                <div class="flex xl:ml-16 pt-6">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">Github</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-32 xl:flex xl:items-center xl:justify-between">
+        <div class="font-bold text-lg px-12 xl:px-10 xl:py-10">Made by Edward Miller <span class="emoji happy"></span>
+            2020
+        </div>
+        <div class="flex py-10 xl:flex-none py-10 xl:px-24 xl:py-10">
+            <span><a class="font-bold text-green-500 tracking-wider uppercase text-base mx-6 cursor-pointer"
+                    href="mailto:edmiller.me@gmail.com" target="_blank">Email</a></span>
+            <span><a class="font-bold text-green-500 tracking-wider uppercase text-base mx-6 cursor-pointer"
+                    href="https://www.instagram.com/_edwardmiller_/" target="_blank">Instagram</a></span>
+            <span><a class="font-bold text-green-500 tracking-wider uppercase text-base mx-6 cursor-pointer"
+                    href="https://github.com/edmiller1" target="_blank">github</a></span>
+        </div>
+        <button onclick="goToTop()" id="toTopButton" class="emoji point-up"></button>
+    </footer>
+
+    <script>
+        function changeMode() {
+            let element = document.body;
+            element.classList.toggle('dark-mode');
+        }
+
+        let toTopButton = document.getElementById('toTopButton');
+
+        function isScrolling() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                toTopButton.style.display = 'block';
+            } else {
+                toTopButton.style.display = 'none';
+            }
+        }
+
+        window.onscroll = function () {
+            isScrolling();
+        }
+
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
