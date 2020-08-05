@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url('https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1108&q=80') no-repeat;
+}
+
 .emoji {
     display: inline-block;
     vertical-align: text-top;

@@ -10,12 +10,14 @@
         href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/male-technologist-type-1-2_1f468-1f3fb-200d-1f4bb.png">
     <link rel="stylesheet" href="public/build/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/6dafcb35b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="float-right py-3 xl:px-10 theme-switch-wrapper">
+    <header style="height: 100vh;">
+        <div id="switch" class="float-right py-3 xl:px-10 theme-switch-wrapper" data-aos="fade-up"
+            data-aos-duration="2000" data-aos-delay="1">
             <i class="fas fa-sun fa-lg px-3"></i>
             <label onchange="changeMode()" class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
@@ -23,7 +25,7 @@
             </label>
             <i class="fas fa-moon fa-lg px-3"></i>
         </div>
-        <div id="intro" class="px-10 pb-16 pt-24 xl:py-48 xl:px-24">
+        <div id="intro" class="px-10 pb-16 pt-24 xl:py-48 xl:px-24" data-aos="fade-right" data-aos-duration="1500">
             <h1 class="intro-hi text-3xl xl:text-4xl font-light">Hi there!
                 <span class="emoji wave-hand"></span>
             </h1>
@@ -42,7 +44,7 @@
             </h3>
         </div>
     </header>
-    <section id="background">
+    <section id="background" data-aos="fade-right" data-aos-duration="1500">
         <div class="mx-10 xl:flex xl:mx-64 xl:mb-48">
             <div class="pb-6">
                 <span class="text-green-500 font-bold text-base uppercase tracking-widest">Background</span>
@@ -71,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="10">
         <div class="mx-10 mb-10 xl:flex xl:mx-64 xl:mb-48">
             <div class="pb-6">
                 <span class="text-green-500 font-bold text-base uppercase tracking-widest">Skills</span>
@@ -104,72 +106,82 @@
     </section>
     <section class="other projects">
         <div class="mx-10 mb-10 xl:flex xl:mx-64 xl:mb-48">
-            <div class="pb-6">
+            <div class="pb-6" data-aos="fade-right" data-aos-duration="1500">
                 <span class="text-green-500 font-bold text-base uppercase tracking-widest">
                     Projects
                 </span>
             </div>
             <div class="flex-col xl:ml-8">
-                <div class="xl:ml-16">
-                    <span class="font-bold">Felinder</span>
-                    <a href="https://github.com/edmiller1/Felinder" class="ml-3"><i
-                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <div class="xl:ml-16">
+                        <span class="font-bold">Felinder</span>
+                        <a href="https://github.com/edmiller1/Felinder" class="ml-3"><i
+                                class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                    </div>
+                    <p class="xl:ml-16 pt-6">An application similar to Tinder that allows users to unmatch, match or
+                        super-like
+                        cats based on picture, distance and age.
+                    </p>
+                    <div class="flex xl:ml-16 pt-6 pb-12">
+                        <span class="tag">VueJS</span>
+                        <span class="tag">Vuex</span>
+                        <span class="tag">Vue-Router</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">Axios</span>
+                    </div>
                 </div>
-                <p class="xl:ml-16 pt-6">An application similar to Tinder that allows users to unmatch, match or
-                    super-like
-                    cats based on picture, distance and age.
-                </p>
-                <div class="flex xl:ml-16 pt-6 pb-12">
-                    <span class="tag">VueJS</span>
-                    <span class="tag">Vuex</span>
-                    <span class="tag">Vue-Router</span>
-                    <span class="tag">TailwindCSS</span>
-                    <span class="tag">Axios</span>
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <div class="xl:ml-16">
+                        <span class="font-bold">VueTODO</span>
+                        <a href="https://github.com/edmiller1/vueTODO" class="ml-3"><i
+                                class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                    </div>
+                    <p class="xl:ml-16 pt-6">A desktop TODO app built with VueJS that allows users to create, read,
+                        update
+                        and
+                        delete TODO's as well as mark them as important.
+                    </p>
+                    <div class="flex xl:ml-16 pt-6 pb-12">
+                        <span class="tag">VueJS</span>
+                        <span class="tag">Vuex</span>
+                        <span class="tag">Vue-Router</span>
+                        <span class="tag">Vuetify</span>
+                        <span class="tag">Firebase</span>
+                    </div>
                 </div>
-                <div class="xl:ml-16">
-                    <span class="font-bold">VueTODO</span>
-                    <a href="https://github.com/edmiller1/vueTODO" class="ml-3"><i
-                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <div class="xl:ml-16">
+                        <span class="font-bold">Trello Clone</span>
+                        <a href="https://github.com/edmiller1/Trello-Clone" class="ml-3"><i
+                                class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                    </div>
+                    <p class="xl:ml-16 pt-6">A desktop web app that mimics
+                        the basic capabilities of Trello and stores all created tasks using local storage.
+                    </p>
+                    <div class="flex xl:ml-16 pt-6 pb-12">
+                        <span class="tag">VueJS</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">Drag and Drop API</span>
+                        <span class="tag">Local Storage</span>
+                    </div>
                 </div>
-                <p class="xl:ml-16 pt-6">A desktop TODO app built with VueJS that allows users to create, read, update
-                    and
-                    delete TODO's as well as mark them as important.
-                </p>
-                <div class="flex xl:ml-16 pt-6 pb-12">
-                    <span class="tag">VueJS</span>
-                    <span class="tag">Vuex</span>
-                    <span class="tag">Vue-Router</span>
-                    <span class="tag">Vuetify</span>
-                    <span class="tag">Firebase</span>
-                </div>
-                <div class="xl:ml-16">
-                    <span class="font-bold">Trello Clone</span>
-                    <a href="https://github.com/edmiller1/Trello-Clone" class="ml-3"><i
-                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
-                </div>
-                <p class="xl:ml-16 pt-6">A desktop web app that mimics
-                    the basic capabilities of Trello and stores all created tasks using local storage.
-                </p>
-                <div class="flex xl:ml-16 pt-6 pb-12">
-                    <span class="tag">VueJS</span>
-                    <span class="tag">TailwindCSS</span>
-                    <span class="tag">Drag and Drop API</span>
-                    <span class="tag">Local Storage</span>
-                </div>
-                <div class="xl:ml-16">
-                    <span class="font-bold">Github Resume</span>
-                    <a href="https://github.com/edmiller1/edmiller1.github.io" class="ml-3"><i
-                            class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
-                </div>
-                <p class="xl:ml-16 pt-6">An online resume hosted on Github Pages that displays key things about myself
-                    including projects,
-                    education and skills.
-                </p>
-                <div class="flex xl:ml-16 pt-6">
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    <span class="tag">TailwindCSS</span>
-                    <span class="tag">Github</span>
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <div class="xl:ml-16">
+                        <span class="font-bold">Github Resume</span>
+                        <a href="https://github.com/edmiller1/edmiller1.github.io" class="ml-3"><i
+                                class="arrow fas fa-arrow-right w-32 fill-current text-green-500"></i></a>
+                    </div>
+                    <p class="xl:ml-16 pt-6">An online resume hosted on Github Pages that displays key things about
+                        myself
+                        including projects,
+                        education and skills.
+                    </p>
+                    <div class="flex xl:ml-16 pt-6">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">Github</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,7 +190,7 @@
         <div class="font-bold text-lg px-12 xl:px-10 xl:py-10">Made by Edward Miller <span class="emoji happy"></span>
             2020
         </div>
-        <div class="flex py-10 xl:flex-none py-10 xl:px-24 xl:py-10">
+        <div class="flex py-10 xl:flex-none xl:px-24 xl:py-10">
             <span><a class="font-bold text-green-500 tracking-wider uppercase text-base mx-6 cursor-pointer"
                     href="mailto:edmiller.me@gmail.com" target="_blank">Email</a></span>
             <span><a class="font-bold text-green-500 tracking-wider uppercase text-base mx-6 cursor-pointer"
@@ -189,7 +201,10 @@
         <button onclick="goToTop()" id="toTopButton" class="emoji point-up"></button>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         function changeMode() {
             let element = document.body;
             element.classList.toggle('dark-mode');
