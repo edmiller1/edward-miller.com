@@ -7,8 +7,18 @@ html {
 }
 
 header {
-    background-color: rgba(243, 193, 223, 0.5);
+    background-color: rgba(243, 193, 223, 0.4);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+}
+
+#projects {
+    height: 100vh;
+    background-color: rgba(115, 180, 219, 0.4);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.title {
+    color: #b55881;
 }
 
 .header-border {
@@ -83,8 +93,9 @@ header {
 }
 
 .main-button {
+    text-decoration: none;
     border: 2px solid #1a202c;
-    padding: 1rem 1.5rem .8rem;
+    padding: 1rem 1.5rem 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1.2rem;
     position: relative;
@@ -98,10 +109,15 @@ header {
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    background-color: rgb(192, 116, 140, 0.5);
+    background-color: rgba(181, 88, 129, 0.4);
     z-index: -1;
-    content: "";
-    transition: .3s ease-in-out;
+    content: '';
+    transition: 0.3s ease-in-out;
+}
+
+.main-button:hover::before {
+    top: 0;
+    left: 0;
 }
 
 .intro-contact .point-right {
@@ -158,8 +174,8 @@ header {
 }
 
 .tag {
-    color: #38a169;
-    border: solid 1px #38a169;
+    color: #b55881;
+    border: solid 1px #b55881;
     border-radius: 0.125rem;
     padding: 0.25rem 0.25rem;
     margin-right: 0.5rem;
