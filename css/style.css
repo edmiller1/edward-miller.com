@@ -8,13 +8,24 @@ html {
 
 header {
     background-color: rgba(243, 193, 223, 0.4);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+#background {
+    border-bottom: solid 15px rgb(186, 86, 131, 0.4);
+}
+
+#skills {
+    background-color: rgba(243, 193, 223, 0.4);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 #projects {
-    height: 100vh;
-    background-color: rgba(115, 180, 219, 0.4);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-bottom: solid 15px rgb(186, 86, 131, 0.4);
+}
+
+footer {
+    background-color: rgba(243, 193, 223, 0.4);
 }
 
 .title {
@@ -259,6 +270,10 @@ input:checked+.slider:before {
 .dark-mode {
     background: #1a202c;
     color: #f7fafc;
+}
+
+.dark-mode .title {
+    color: #e2e8f0;
 }
 
 #toTopButton {
