@@ -103,6 +103,10 @@ footer {
     max-width: 700px;
 }
 
+.profile-image {
+    border: 8px solid rgba(243, 193, 223, 0.4);
+}
+
 .main-button {
     text-decoration: none;
     border: 2px solid #1a202c;
