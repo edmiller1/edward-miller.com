@@ -1,9 +1,8 @@
 # edward-miller | My Personal Website
 
-![alt text](https://github.com/edmiller1/wave-react-player/blob/main/waves.png?raw=true)
+![alt text](https://github.com/edmiller1/edward-miller.com/blob/master/landing.png?raw=true)
 
 # Built with:
-  * [React](https://reactjs.org/)
+  * [HTML5]
+  * [CSS3]
   * [Tailwind CSS](https://tailwindcss.com/)
-  * [Sass](https://sass-lang.com/)
-  * [Themoviedatabase API](https://www.themoviedb.org/)
