@@ -5,4 +5,4 @@
 # Built with:
   * [HTML5]
   * [CSS3]
-  * [Tailwind CSS](https://tailwindcss.com/)
+  * [TailwindCSS](https://tailwindcss.com/)
